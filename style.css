@@ -93,6 +93,15 @@ section{
 }
 .home-img{
     width: 35vw;
+    animation: animate 1s linear infinite alternate;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(10px);
+    }
 }
 .home-img img{
     width: 520px;
@@ -216,6 +225,10 @@ section{
     margin: 25px 0;
     list-style: none;
 }
+.Skills .container li .skill-text{
+    display: flex;
+    justify-content: space-between;
+}
 .Skills .container li h3{
     font-size: 2rem;
 }
@@ -242,10 +255,10 @@ background: var(--main-color);
     width: 75%;
 }
 .Reactjs{
-    width: 80%;
+    width: 85%;
 }
 .Nodejs{
-    width: 85%;
+    width: 80%;
 }
 
 /* ............projects.......... */
